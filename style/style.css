@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    scroll-behavior: smooth; /* to make back to top button scroll smooth*/
+}
+header{
+    background-color: #007bff;
+    padding: 15px 0;
+    position: relative;
+    font-size: 20px;
+}
+header::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: rgb(211, 211, 211);
+}
+nav ul li{
+    display: inline;
+    margin-right: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white !important;/*!important for take the priority over bootstrap*/
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #00366f !important;/*!important for take the priority over bootstrap*/
+}
+nav a:focus {
+    text-decoration: underline;
+    color: #00366f !important;/*!important for take the priority over bootstrap*/
+}
+article{
+    background-color: white;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 20px;
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;/*to make transition smooth*/
+}
+article h2{
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+article p{
+    color: rgb(96, 96, 96);
+    margin-bottom: 20px;
+}
+article .btn:hover{
+    background-color: #014288;
+    transform: scale(1.05,1.05);
+}
+article .btn:focus{
+    background-color: #014288;
+}
+article:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 8px 4px rgba(0, 0, 0,0.3);
+}
+.act{
+    background: -webkit-linear-gradient(bottom, #203149, #39526b, #6482AD ,#808081); /* Gradient color */
+    background-clip: text;/* background color should extend within an text(icon) element.*/
+    -webkit-text-fill-color: transparent;/*sets the fill color of the text*/
+}
+.pri{
+    background: -webkit-linear-gradient(top, #b76f1d, #c2880b, rgb(186, 186, 1) ,rgb(253, 253, 140)); /* Gradient color */
+    background-clip: text;/* background color should extend within an text(icon) element.*/
+    -webkit-text-fill-color: transparent;/*sets the fill color of the text*/
+}
+.goal{
+    background: -webkit-radial-gradient(center,circle, rgb(12, 12, 12), rgb(8, 53, 130) ,rgb(57, 83, 127)); /* Gradient color */
+    background-clip: text;/* background color should extend within an text(icon) element.*/
+    -webkit-text-fill-color: transparent;/*sets the fill color of the text*/
+}
+.sidebar{
+    background-color: white;
+    border: 1px solid white;
+    margin-bottom: 7px;
+    padding: 25px;
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0,0.1);
+    border-radius: 5px;
+}
+.sidebar h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.sidebar ul{
+    padding-left: 0;
+    color: #007bff;
+}
+.sidebar ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+}
+.sidebar ul li a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: #343a40;
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px 5px;
+    margin-top: 20px;
+}
+footer .p1{
+    font-size: 25px;
+    color: white
+}
+footer .p1 i{
+    background: -webkit-linear-gradient(top, #3e5576, #6c8eb0, #6482AD ,#f4f4f9); /* Gradient color */
+    background-clip: text;/* background color should extend within an text(icon) element.*/
+    -webkit-text-fill-color: transparent;/*sets the fill color of the text*/
+    display: inline-block;
+    transition: all 0.3s;/*to make transition smooth*/
+}
+footer .p1 i:hover{
+    transform: scale(1.1,1.1);
+}
+footer .p2{
+    margin: 0;
+    color: white;
+    padding-bottom: 10px;
+}
+.to-top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 35px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: black;
+    display: none;
+    transition: all 0.4s;/*to make transition smooth*/
+}
+/* this class activate when scroll the page down
+    handel by js */
+.to-top.active{
+    display: block;
+    bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
