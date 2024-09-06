@@ -30,5 +30,7 @@ For a local preview, you can use any web server or open the `index.html` file di
 
 ## To view the project using GitHb Pages
 
+Navigate to the bar on the right side of the page to the Deployment Section and click on **github-pages**. You will be directed to deployments page. Click on the latest deployment to view the project in your browser.
+
 **To run the website**:
     from **Setting + pages refresh and press on visit site**
