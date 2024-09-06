@@ -16,17 +16,19 @@ Welcome to the **My Advanced Blog** repository! This project showcases a modern 
 To view the website locally, follow these steps:
 
 
-**Clone the Repository**:
+1. **Clone the Repository**:
     git clone the "link of the Repository"
    ```bash
    git clone https://github.com/HadeerAbdelgawad/My-Advanced-Blog.git
    ```
-**Navigate to the project directory**
+2. **Navigate to the project directory**
 ```
 cd My-Advanced-Blog
 ```
-**Open the Project in Your Browser:**
+3. **Open the Project in Your Browser:**
 For a local preview, you can use any web server or open the `index.html` file directly in your browser.
+
+## To view the project using GitHb Pages
 
 **To run the website**:
     from **Setting + pages refresh and press on visit site**
