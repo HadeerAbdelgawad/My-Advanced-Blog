@@ -17,3 +17,7 @@ Welcome to the **My Advanced Blog** repository! This project showcases a modern,
     git clone the "link of the Repository"
    ```bash
    git clone https://github.com/HadeerAbdelgawad/My-Advanced-Blog.git
+   ```
+
+**To run the website**:
+    from **Setting + pages refresh and press on visit site**
